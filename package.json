@@ -1,16 +1,13 @@
 {
-    "name": "curso_nodejs_solis",
-    "version": "1.0.0",
-    "description": "Curso de NodeJS con Solis",
-    "main": "servidor.js",
-    "dependencies": {
-        "express": "^4.14.0"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "Sanders Gutiérrez",
-    "license": "ISC"
+  "name": "curso_nodejs_solis",
+  "version": "1.0.0",
+  "description": "Curso de NodeJS con Solis",
+  "main": "servidor.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "author": "Sanders Gutiérrez",
+  "license": "ISC"
 }
