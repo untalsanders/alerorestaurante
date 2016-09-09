@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const path = require('path');
 
 const server = http.createServer((request, response) => {
     response.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
@@ -21,17 +22,3 @@ const server = http.createServer((request, response) => {
 });
 //
 server.listen(3000,'localhost');
-
-// const express = require('express');
-// const fs = require('fs');
-// const app = express();
-// app.use(express.static(__dirname + '/public'));
-//
-// app.get('/', (request, response) => {
-//     // response.render('index.jade');
-//     console.log(request.url);
-// });
-//
-// app.listen(3000, () => {
-//     console.log('Servidor corriendo en http://localhost:3000');
-// });
