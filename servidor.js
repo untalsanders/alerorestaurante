@@ -1,8 +1,11 @@
 const express = require('express');
+const fs = require('fs');
+
 var app = express();
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    res.send('Hola Mundo con Express JS');
+    res.sendFile('index.html');
 });
 
 app.listen(3000, 'localhost', () => {
