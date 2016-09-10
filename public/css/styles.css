@@ -80,15 +80,47 @@ header nav a:hover {
 }
 
 .principal article {
+    width: 280px;
     margin-bottom: 20px;
+    margin-right: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
+    float: left;
+    text-align: center;
 }
 
 .principal article:nth-last-child(1) {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
+}
+
+.principal article img {
+    margin-top: 20px;
+}
+
+.principal article p {
+    margin-top: 20px;
+}
+
+.comprar {
+    display: block;
+	width: 100px;
+	height: 30px;
+	background: red;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	line-height: 30px;
+    margin: auto auto;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.comprar:hover {
+	background: green;
+	color: #000;
 }
 
 aside {
