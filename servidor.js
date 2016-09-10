@@ -17,8 +17,15 @@ app.get('/', (req, res) => {
 app.get('/acercade', (req, res) => {
     res.render('acercade.pug');
 });
+
+var camisetaDatos = [
+    {titulo: 'Naranja', imagen: 'camiseta1.png'},
+    {titulo: 'Roja', imagen: 'camiseta2.png'},
+    {titulo: 'Azul', imagen: 'camiseta3.png'},
+    {titulo: 'Verde', imagen: 'camiseta4.png'}
+];
 app.get('/proyectos', (req, res) => {
-    res.render('proyectos.pug');
+    res.render('proyectos.pug', {titulo_pagina: 'Proyectos', camisetas: camisetaDatos});
 });
 app.get('/blog', (req, res) => {
     res.render('blog.pug');
