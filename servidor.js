@@ -62,6 +62,11 @@ app.get('/contacto', (req, res) => {
     res.render('contacto.pug');
 });
 
+app.use((req, res) => {
+    res.status(404);
+    res.render('404.pug', {titulo: '404 - Página no encontrada :('});
+});
+
 app.listen(3000, 'localhost', () => {
     console.log("Escuchando en el puerto 3000");
 });

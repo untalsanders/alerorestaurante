@@ -20,7 +20,7 @@ html(lang="es")
                     a(href="/contacto") Contacto
             section.principal
                 - for (var i = 0; i < camisetas.length; i++) {
-                    article
+                    article.article
                         h2.titulo= "Camiseta " + camisetas[i].titulo
                         img(src="/img/" + camisetas[i].imagen, width="250")
                         p= camisetas[i].descripcion

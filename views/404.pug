@@ -1,7 +1,7 @@
 doctype html
 html(lang="es")
     head
-        title ERROR 404 | Sanders Gutiérrez
+        title= titulo + " | Sanders Gutiérrez"
         meta(charset="utf-8")
         meta(name="description", content="")
         meta(name="viewport", content="width=device-width user-scalable=no initial-scale=1")
@@ -19,9 +19,8 @@ html(lang="es")
                     a(href="/blog") Blog
                     a(href="/contacto") Contacto
             section.principal
-                article
-                    h2.titulo ERROR 404 - NOT FOUND
-                    p Error cargando la página - Página no encontrada
+                h2.titulo= titulo
+                p Lo sentimos
             aside
                 div.widget
                     div.image
