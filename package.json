@@ -1,0 +1,25 @@
+{
+    "name": "curso_nodejs_solis",
+    "version": "0.0.1",
+    "description": "Curso de Node JS - Javier Solis",
+    "main": "servidor.js",
+    "dependencies": {
+        "express": "^4.14.0",
+        "pug": "^2.0.0-beta6"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "nodemon servidor.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/sandersgutierrez/curso_nodejs_solis.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/sandersgutierrez/curso_nodejs_solis/issues"
+    },
+    "homepage": "https://gitlab.com/sandersgutierrez/curso_nodejs_solis#README"
+}

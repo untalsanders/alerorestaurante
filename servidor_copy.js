@@ -20,4 +20,6 @@ const server = http.createServer((request, response) => {
     });
 });
 
-server.listen(3000,'localhost');
+server.listen(3000, 'localhost', () => {
+    console.log("Escuchando en el puerto 3000");
+});
