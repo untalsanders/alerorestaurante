@@ -2,14 +2,17 @@
     "name": "curso_nodejs_solis",
     "version": "0.0.1",
     "description": "Curso de Node JS - Javier Solis",
+    "private": true,
     "main": "servidor.js",
+    "scripts": {
+        "start": "nodemon servidor.js"
+    },
     "dependencies": {
         "express": "^4.14.0",
         "pug": "^2.0.0-beta6"
     },
-    "devDependencies": {},
-    "scripts": {
-        "start": "nodemon servidor.js"
+    "devDependencies": {
+        "nodemon": "^1.11.0"
     },
     "repository": {
         "type": "git",
