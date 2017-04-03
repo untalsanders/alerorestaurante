@@ -44,6 +44,7 @@ var camisetaDatos = [
 
 app.get('/productos', (req, res) => {
     res.render('productos.pug', {titulo_pagina: 'Productos', camisetas: camisetaDatos});
+    console.log(req.rawHeaders[0]);
 });
 
 app.get('/productos/comprar/:camiseta', (req, res) => {
