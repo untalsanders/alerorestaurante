@@ -7,7 +7,7 @@ block content
     - for (var i = 0; i < camisetas.length; i++) {
         article.article
             h2.titulo= "Camiseta " + camisetas[i].titulo
-            img(src="/img/" + camisetas[i].imagen, width="250")
+            img(src="/static/img/" + camisetas[i].imagen, width="250")
             p= camisetas[i].descripcion
             a(href="/productos/comprar/" + camisetas[i].titulo).comprar Comprar
     - }

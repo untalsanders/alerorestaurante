@@ -3,9 +3,19 @@
     "version": "0.0.1",
     "description": "Curso de Node JS - Javier Solis",
     "private": true,
-    "main": "servidor.js",
+    "author": "Sanders Gutierrez <ing.sanders@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://gitlab.com/sandersgutierrez/curso-nodejs-solis#README",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/sandersgutierrez/curso-nodejs-solis.git"
+    },
+    "bugs": {
+        "url": "https://gitlab.com/sandersgutierrez/curso-nodejs-solis/issues"
+    },
+    "main": "index.js",
     "scripts": {
-        "start": "nodemon servidor.js"
+        "start": "nodemon index.js"
     },
     "dependencies": {
         "express": "^4.14.0",
@@ -13,16 +23,5 @@
     },
     "devDependencies": {
         "nodemon": "^1.11.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@gitlab.com/sandersgutierrez/curso_nodejs_solis.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://gitlab.com/sandersgutierrez/curso_nodejs_solis/issues"
-    },
-    "homepage": "https://gitlab.com/sandersgutierrez/curso_nodejs_solis#README"
+    }
 }
