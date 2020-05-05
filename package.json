@@ -5,13 +5,13 @@
     "private": true,
     "author": "Sanders Gutierrez <ing.sanders@gmail.com>",
     "license": "MIT",
-    "homepage": "https://gitlab.com/sandersgutierrez/curso-nodejs-solis#README",
+    "homepage": "https://gitlab.com/sandersgutierrez/learning-nodejs#README",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@gitlab.com/sandersgutierrez/curso-nodejs-solis.git"
+        "url": "git+ssh://git@gitlab.com/sandersgutierrez/learning-nodejs.git"
     },
     "bugs": {
-        "url": "https://gitlab.com/sandersgutierrez/curso-nodejs-solis/issues"
+        "url": "https://gitlab.com/sandersgutierrez/learning-nodejs/issues"
     },
     "main": "index.js",
     "scripts": {
