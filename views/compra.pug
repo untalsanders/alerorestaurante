@@ -1,11 +1,11 @@
-extend layout.pug
+extends layout.pug
 
 block title
-        title= "Camiseta " + titulo + " - Sanders Gutiérrez"
+    title= "Camiseta " + titulo + " - Sanders Gutiérrez"
 
 block content
     article
         h2.titulo= "Gracias por comprar la Camiseta " + titulo
-        img(src="/static/img/" + imagen, width="250")
+        img(src="/static/img/" + imagen, width='250')
         p= descripcion
-        a(href="/productos").comprar  Regresar
+        a.comprar(href='/productos') Regresar

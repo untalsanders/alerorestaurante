@@ -16,13 +16,16 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon index.js"
+        "dev": "nodemon index.js",
+        "format": "prettier --write \"**/*.js\" \"**/*.pug\""
     },
     "dependencies": {
         "express": "^4.14.0",
         "pug": "^3.0.2"
     },
     "devDependencies": {
-        "nodemon": "^1.11.0"
+        "@prettier/plugin-pug": "^1.15.2",
+        "nodemon": "^1.11.0",
+        "prettier": "^2.3.0"
     }
 }

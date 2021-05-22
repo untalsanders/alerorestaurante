@@ -1,25 +1,25 @@
 doctype html
-html(lang="es")
+html(lang='es')
     head
         block title
-        meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width user-scalable=no initial-scale=1")
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width user-scalable=no initial-scale=1')
         block css
-            link(rel="shortcut icon", href="/static/favicon.ico", type="image/x-icon")
-            link(rel="stylesheet", href="/static/css/styles.css")
+            link(rel='shortcut icon', href='/static/favicon.ico', type='image/x-icon')
+            link(rel='stylesheet', href='/static/css/styles.css')
         block js
     body
-        div.contenedor
+        .contenedor
             header
-                div.logo
-                    img(src="/static/img/logotipo.png", alt="Logotipo")
-                    a(href="/") Sanders Gutiérrez
+                .logo
+                    img(src='/static/img/logotipo.png', alt='Logotipo')
+                    a(href='/') Sanders Gutiérrez
                 nav
-                    a(href="/") Inicio
-                    a(href="/acercade") Acerca de
-                    a(href="/productos") Productos
-                    a(href="/blog") Blog
-                    a(href="/contacto") Contacto
+                    a(href='/') Inicio
+                    a(href='/acercade') Acerca de
+                    a(href='/productos') Productos
+                    a(href='/blog') Blog
+                    a(href='/contacto') Contacto
             section.principal
                 block content
 
@@ -27,15 +27,15 @@ html(lang="es")
 
             footer
                 section.links
-                    a(href="/") Inicio
-                    a(href="/acercade") Acerca de
-                    a(href="/productos") Productos
-                    a(href="/blog") Blog
-                    a(href="/contacto") Contacto
-                div.social
-                    a(href="/", ) GP
-                    a(href="/", ) IN
-                    a(href="/", ) FB
-                    a(href="/", ) TW
-                    a(href="/", ) LN
-                    a(href="/", ) YT
+                    a(href='/') Inicio
+                    a(href='/acercade') Acerca de
+                    a(href='/productos') Productos
+                    a(href='/blog') Blog
+                    a(href='/contacto') Contacto
+                .social
+                    a(href='/') GP
+                    a(href='/') IN
+                    a(href='/') FB
+                    a(href='/') TW
+                    a(href='/') LN
+                    a(href='/') YT
