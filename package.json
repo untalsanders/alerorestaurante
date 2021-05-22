@@ -1,22 +1,21 @@
 {
-    "name": "curso_nodejs_solis",
-    "version": "0.0.1",
-    "description": "Curso de Node JS - Javier Solis",
+    "name": "shirt-store",
+    "version": "0.1.0",
+    "description": "Aprendiendo Nodejs con un ejemplo práctico.",
     "private": true,
     "author": "Sanders Gutierrez <ing.sanders@gmail.com>",
     "license": "MIT",
-    "homepage": "https://gitlab.com/sandersgutierrez/learning-nodejs#README",
+    "homepage": "https://github.com/sandersgutierrez/shirt-store#README",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@gitlab.com/sandersgutierrez/learning-nodejs.git"
+        "url": "git+ssh://git@github.com/sandersgutierrez/shirt-store.git"
     },
     "bugs": {
-        "url": "https://gitlab.com/sandersgutierrez/learning-nodejs/issues"
+        "url": "https://github.com/sandersgutierrez/shirt-store/issues"
     },
-    "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "dev": "nodemon index.js",
+        "start": "node src/index.js",
+        "dev": "NODE_ENV=development nodemon src/index.js",
         "format": "prettier --write \"**/*.js\" \"**/*.pug\""
     },
     "dependencies": {
@@ -25,6 +24,7 @@
     },
     "devDependencies": {
         "@prettier/plugin-pug": "^1.15.2",
+        "dotenv": "^10.0.0",
         "nodemon": "^1.11.0",
         "prettier": "^2.3.0"
     }
