@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
     res.render('index.pug')
 })
 
-app.get('/acercade', (req, res) => {
-    res.render('acercade.pug')
+app.get('/about', (req, res) => {
+    res.render('about.pug')
 })
 
 app.get('/productos', (req, res) => {
@@ -26,8 +26,8 @@ app.get('/productos', (req, res) => {
 })
 
 app.get('/productos/comprar/:camiseta', (req, res) => {
-    shirts.filter((camiseta) =>
-        req.params.camiseta.toLocaleLowerCase() == camiseta.titulo.toLocaleLowerCase()
+    shirts.filter(shirt =>
+        req.params.camiseta.toLocaleLowerCase() === camiseta.titulo.toLocaleLowerCase()
             ? res.render('compra.pug', camiseta)
             : null,
     )
@@ -37,9 +37,7 @@ app.get('/blog', (req, res) => {
     res.render('blog.pug')
 })
 
-app.get('/contacto', (req, res) => {
-    res.render('contacto.pug')
-})
+app.get('/contacto', (req, res) => res.render('contacto.pug'))
 
 app.use((req, res) => {
     res.status(404)
@@ -48,4 +46,5 @@ app.use((req, res) => {
 
 app.listen(config.port, config.host, () => {
     console.log(`Servidor iniciado en -> http://${config.host}:${config.port}`)
+    console.log(process)
 })

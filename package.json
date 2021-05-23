@@ -19,7 +19,7 @@
         "format": "prettier --write \"**/*.js\" \"**/*.pug\""
     },
     "dependencies": {
-        "express": "^4.14.0",
+        "express": "^4.17.1",
         "pug": "^3.0.2"
     },
     "devDependencies": {
