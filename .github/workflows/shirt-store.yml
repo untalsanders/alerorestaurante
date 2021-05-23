@@ -1,17 +1,19 @@
-name: Shirt Store - Build Container for Prod & Push to Dockerhub
+name: Build Containers for Prod & Push to Dockerhub
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches:
+      - master
+  push:
+    branches:
+      - master
 
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  build-and-deploy-back:
+    name: Build and Deploy Back-end
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Code
+    - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Build and push Docker image
