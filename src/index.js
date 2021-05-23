@@ -1,9 +1,9 @@
 'use strict'
 
-const { join } = require('path')
+const {join} = require('path')
 const express = require('express')
 const config = require('./config')
-const { shirts } = require('./data')
+const {shirts} = require('./data')
 
 const app = express()
 
@@ -19,32 +19,30 @@ app.get('/about', (req, res) => {
     res.render('about.pug')
 })
 
-app.get('/productos', (req, res) => {
-    res.render('productos.pug', {
-        camisetas: shirts,
+app.get('/products', (req, res) => {
+    res.render('products.pug', {
+        shirts,
     })
 })
 
-app.get('/productos/comprar/:camiseta', (req, res) => {
-    shirts.filter(shirt =>
-        req.params.camiseta.toLocaleLowerCase() === camiseta.titulo.toLocaleLowerCase()
-            ? res.render('compra.pug', camiseta)
-            : null,
-    )
+app.get('/products/:shirtId', (req, res) => {
+    const {shirtId} = req.params
+    shirts.filter(shirt => shirtId == shirt.id ? res.render('shirt-detail.pug', {shirt}) : null)
 })
 
 app.get('/blog', (req, res) => {
     res.render('blog.pug')
 })
 
-app.get('/contacto', (req, res) => res.render('contacto.pug'))
+app.get('/contact', (req, res) => res.render('contact.pug'))
 
 app.use((req, res) => {
     res.status(404)
-    res.render('404.pug', { titulo: '404 - Página no encontrada :(' })
+    res.render('404.pug', {
+        message: '404 - Página no encontrada :('
+    })
 })
 
 app.listen(config.port, config.host, () => {
     console.log(`Servidor iniciado en -> http://${config.host}:${config.port}`)
-    console.log(process)
 })

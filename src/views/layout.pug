@@ -5,7 +5,7 @@ html(lang='es')
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width user-scalable=no initial-scale=1')
         block css
-            link(rel='shortcut icon', href='/static/favicon.ico', type='image/x-icon')
+            link(rel='shortcut icon', href='/static/img/logotipo.png', type='image/png')
             link(rel='stylesheet', href='/static/css/styles.css')
         block js
     body
@@ -16,10 +16,11 @@ html(lang='es')
                     a(href='/') Sanders Gutiérrez
                 nav
                     a(href='/') Inicio
-                    a(href='/acercade') Acerca de
-                    a(href='/productos') Productos
+                    a(href='/about') Acerca de
+                    a(href='/products') Productos
                     a(href='/blog') Blog
-                    a(href='/contacto') Contacto
+                    a(href='/contact') Contacto
+
             section.principal
                 block content
 
@@ -28,14 +29,11 @@ html(lang='es')
             footer
                 section.links
                     a(href='/') Inicio
-                    a(href='/acercade') Acerca de
-                    a(href='/productos') Productos
+                    a(href='/about') Acerca de
+                    a(href='/products') Productos
                     a(href='/blog') Blog
-                    a(href='/contacto') Contacto
+                    a(href='/contact') Contacto
                 .social
-                    a(href='/') GP
                     a(href='/') IN
-                    a(href='/') FB
                     a(href='/') TW
-                    a(href='/') LN
-                    a(href='/') YT
+                    a(href='/') GH
