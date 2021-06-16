@@ -1,21 +1,20 @@
-name: Build Containers for Prod & Push to Dockerhub
+name: Shirt Store - Build Container for Prod & Push to Dockerhub
 
 on:
-  pull_request:
+  push:
     branches:
       - master
-  push:
+  pull_request:
     branches:
       - master
 
 jobs:
-  build-and-deploy-back:
-    name: Build and Deploy Back-end
+  build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
+    - name: Checkout Code
       uses: actions/checkout@v2
-
     - name: Build and push Docker image
       uses: docker/build-push-action@v1
       with:
@@ -24,4 +23,3 @@ jobs:
         repository: sandersgutierrez/shirt-store
         dockerfile: Dockerfile
         tags: latest
-
