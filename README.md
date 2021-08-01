@@ -1,5 +1,7 @@
 # Learning NodeJS
 
+[![Shirt Store - Build Container for Prod & Push to Dockerhub](https://github.com/sandersgutierrez/shirt-store/actions/workflows/shirt-store.yml/badge.svg)](https://github.com/sandersgutierrez/shirt-store/actions/workflows/shirt-store.yml)
+
 Proyecto a modo de aprendizaje de Nodejs
 
 ## Install depencencies
