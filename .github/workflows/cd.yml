@@ -1,4 +1,4 @@
-name: Shirt Store - Build Container for Prod & Push to Dockerhub
+name: Continues Delivery
 
 on:
   push:
