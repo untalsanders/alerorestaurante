@@ -1,6 +1,6 @@
 # Learning NodeJS
 
-[![Continues Delivery](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml/badge.svg)](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml)
+[![Continuous Delivery](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml/badge.svg)](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml)
 
 Proyecto a modo de aprendizaje de Nodejs
 
