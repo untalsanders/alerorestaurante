@@ -1,29 +1,29 @@
-# Learning NodeJS
-
 [![Continuous Delivery](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml/badge.svg)](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml)
 
-Proyecto a modo de aprendizaje de Nodejs
+# Tienda
 
-## Install depencencies
+Tienda de camisetas estampadas
 
-```bash
-$ npm install
-```
+## Instalar dependencias
 
-## Run app
+    ```bash
+    npm install
+    ```
 
-```bash
-# production
-$ npm start
+## Lanzar aplicación
 
-# development
-$ npm run dev
-```
+    ```bash
+    # production
+    npm start
 
-## Author
+    # development
+    npm run dev
+    ```
 
-- [Sanders Gutierrez](https://sandersgutierrez.github.io)
+## Autor
 
-## License
+ - [Sanders Gutiérrez](https://sandersgutierrez.github.io)
 
-This project has been developed under the [MIT license](LICENSE).
+## Licencia
+
+Este proyecto ha sido desarrollado bajo los términos de licenciamiento [MIT](LICENSE).

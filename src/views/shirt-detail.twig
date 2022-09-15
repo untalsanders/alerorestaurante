@@ -1,0 +1,12 @@
+{% extends "layout.twig" %}
+
+{% block title %}Camiseta {{ shirt.title }}{% endblock %}
+
+{% block content %}
+    <article class="article">
+        <h2 class="titulo">Camiseta {{ shirt.title }}</h2>
+        <img src="/static/img/{{ shirt.image }}" alt="" width="250">
+        <p>{{ shirt.description }}</p>
+        <a href="/products">Regresar</a>
+    </article>
+{% endblock %}

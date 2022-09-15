@@ -1,7 +1,7 @@
 {
     "name": "shirt-store",
     "version": "0.1.0",
-    "description": "Aprendiendo Nodejs con un ejemplo práctico.",
+    "description": "RESTAPI - Tienda de camisetas estampadas",
     "private": true,
     "author": "Sanders Gutierrez <ing.sanders@gmail.com>",
     "license": "MIT",
@@ -16,11 +16,13 @@
     "scripts": {
         "start": "node src/index.js",
         "dev": "NODE_ENV=development nodemon src/index.js",
-        "format": "prettier --write \"**/*.js\" \"**/*.pug\""
+        "format": "prettier --write \"**/*.js\" \"**/*.pug\"",
+        "postinstall": "cp .env.example .env"
     },
     "dependencies": {
         "express": "^4.17.1",
-        "pug": "^3.0.2"
+        "pug": "^3.0.2",
+        "twig": "^1.15.4"
     },
     "devDependencies": {
         "@prettier/plugin-pug": "^1.15.2",
