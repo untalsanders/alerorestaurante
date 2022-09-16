@@ -6,19 +6,19 @@ Tienda de camisetas estampadas
 
 ## Instalar dependencias
 
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 
 ## Lanzar aplicación
 
-    ```bash
-    # production
-    npm start
+```bash
+# production
+npm start
 
-    # development
-    npm run dev
-    ```
+# development
+npm run dev
+```
 
 ## Autor
 
