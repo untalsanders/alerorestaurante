@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<head>
+    <head>
         <title>{% block title %} | Sanders Gutiérrez{% endblock %}</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width user-scalable=no initial-scale=1">
-		<link rel="shortcut icon" href="/static/img/logotipo.png" type="image/png">
-		<link rel="stylesheet" href="/static/css/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1">
+        <link rel="shortcut icon" href="/static/img/logotipo.png" type="image/png">
+        <link rel="stylesheet" href="/static/css/styles.css">
         {% block css %}{% endblock %}
-	</head>
+    </head>
 
-	<body>
-		<div class="contenedor">
-			<header>
-				<div class="logo">
-					<img src="/static/img/logotipo.png" alt="Logotipo">
-					<a href="/">Sanders Gutiérrez</a>
-				</div>
-				<nav>
-					<a href="/">Inicio</a>
-					<a href="/about">Acerca de</a>
-					<a href="/products">Productos</a>
-					<a href="/blog">Blog</a>
-					<a href="/contact">Contacto</a>
-				</nav>
-			</header>
+    <body>
+        <div class="contenedor">
+            <header>
+                <div class="logo">
+                    <img src="/static/img/logotipo.png" alt="Logotipo">
+                    <a href="/">Sanders Gutiérrez</a>
+                </div>
+                <nav>
+                    <a href="/">Inicio</a>
+                    <a href="/about">Acerca de</a>
+                    <a href="/products">Productos</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/contact">Contacto</a>
+                </nav>
+            </header>
 
             <section class="principal">
                 {% block content %}{% endblock %}
@@ -33,21 +33,21 @@
             {% block sidebar %}{% endblock %}
 
             <footer>
-				<section class="links">
-					<a href="/">Inicio</a>
-					<a href="/about">Acerca de</a>
-					<a href="/products">Productos</a>
-					<a href="/blog">Blog</a>
-					<a href="/contact">Contacto</a>
-				</section>
-				<div class="social">
-					<a href="/">IN</a>
-					<a href="/">TW</a>
-					<a href="/">GH</a>
-				</div>
-			</footer>
-		</div>
-	</body>
-
+                <section class="links">
+                    <a href="/">Inicio</a>
+                    <a href="/about">Acerca de</a>
+                    <a href="/products">Productos</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/contact">Contacto</a>
+                </section>
+                <div class="social">
+                    <a href="/">IN</a>
+                    <a href="/">TW</a>
+                    <a href="/">GH</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="/static/js/index.js"></script>
 </html>
 

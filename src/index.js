@@ -4,13 +4,11 @@ const { join } = require('path')
 const express = require('express')
 const config = require('./config')
 const { shirts } = require('./data')
-const Twig = require('twig')
 
 const app = express()
 
 app.use('/static', express.static(join(config.root, 'public')))
 app.set('views', join(__dirname, 'views'))
-// app.set('view engine', 'pug')
 app.set('twig options', {
     allow_async: true,
     strict_variables: false
