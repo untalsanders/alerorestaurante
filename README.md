@@ -1,4 +1,4 @@
-[![Continuous Delivery](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml/badge.svg)](https://github.com/sandersgutierrez/shirt-store/actions/workflows/cd.yml)
+[![Continuous Delivery](https://github.com/untalsanders/shirt-store/actions/workflows/cd.yml/badge.svg)](https://github.com/untalsanders/shirt-store/actions/workflows/cd.yml)
 
 # Tienda
 
@@ -22,7 +22,7 @@ npm run dev
 
 ## Autor
 
- - [Sanders Gutiérrez](https://sandersgutierrez.github.io)
+ - [Sanders Gutiérrez](https://untalsanders.github.io)
 
 ## Licencia
 

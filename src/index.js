@@ -11,7 +11,7 @@ app.use('/static', express.static(join(config.root, 'public')))
 app.set('views', join(__dirname, 'views'))
 app.set('twig options', {
     allow_async: true,
-    strict_variables: false
+    strict_variables: false,
 })
 
 app.get('/', (req, res) => {

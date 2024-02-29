@@ -3,5 +3,14 @@
     "trailingComma": "all",
     "tabWidth": 4,
     "semi": false,
-    "printWidth": 120
+    "printWidth": 120,
+    "overrides": [
+        {
+            "files": "*.twig",
+            "options": {
+                "parser": "melody"
+            }
+        }
+    ],
+    "plugins": ["./node_modules/prettier-plugin-twig-melody"]
 }
