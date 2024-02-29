@@ -66,11 +66,6 @@ input, button {
     font-weight: 900;
 }
 
-.header .logo img {
-    width: 40px;
-    vertical-align: middle;
-}
-
 .header nav {
     display: flex;
     flex-wrap: wrap;
