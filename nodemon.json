@@ -5,5 +5,5 @@
         "NODE_ENV": "development"
     },
     "watch": ["public", "src"],
-    "ext": "js,json,twig"
+    "ext": "css,js,json,twig"
 }
