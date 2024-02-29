@@ -112,22 +112,22 @@ header nav a:hover {
 
 .comprar {
     display: block;
-	width: 100px;
-	height: 30px;
-	background: red;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	font-weight: bold;
-	line-height: 30px;
+    width: 100px;
+    height: 30px;
+    background: red;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px;
     margin: auto auto;
-	margin-top: 20px;
-	border-radius: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 .comprar:hover {
-	background: green;
-	color: #000;
+    background: green;
+    color: #000;
 }
 
 aside {

@@ -5,18 +5,12 @@
 {% endblock %}
 
 {% block content %}
-    <h2>
-        Lista de Productos
-    </h2>
+    <h2>Lista de Productos</h2>
     {% for shirt in shirts %}
         <article class="article">
-            <h2 class="titulo">
-                Camiseta {{ shirt.title }}
-            </h2>
+            <h2 class="titulo">Camiseta {{ shirt.title }}</h2>
             <img src="/static/img/{{ shirt.image }}" alt="" width="250" />
-            <p>
-                {{ shirt.description }}
-            </p>
+            <p>{{ shirt.description }}</p>
             <a href="/products/{{ shirt.id }}">Ver</a>
         </article>
     {% endfor %}

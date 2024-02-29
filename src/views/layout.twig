@@ -13,9 +13,7 @@
             href="/static/img/logotipo.png"
             type="image/png" />
         <link rel="stylesheet" href="/static/css/styles.css" />
-        {% block css %}
-
-        {% endblock %}
+        {% block css %}{% endblock %}
     </head>
 
     <body>
@@ -35,14 +33,10 @@
             </header>
 
             <section class="principal">
-                {% block content %}
-
-                {% endblock %}
+                {% block content %}{% endblock %}
             </section>
 
-            {% block sidebar %}
-
-            {% endblock %}
+            {% block sidebar %}{% endblock %}
 
             <footer>
                 <section class="links">

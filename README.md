@@ -22,7 +22,7 @@ npm run dev
 
 ## Autor
 
- - [Sanders Gutiérrez](https://untalsanders.github.io)
+-   [Sanders Gutiérrez](https://untalsanders.github.io)
 
 ## Licencia
 

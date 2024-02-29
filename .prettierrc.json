@@ -4,13 +4,13 @@
     "tabWidth": 4,
     "semi": false,
     "printWidth": 120,
+    "plugins": ["./node_modules/@afshinhaghighat/prettier-plugin-twig-melody/src/index.js"],
     "overrides": [
         {
             "files": "*.twig",
             "options": {
-                "parser": "melody"
+                "printWidth": 120
             }
         }
-    ],
-    "plugins": ["./node_modules/prettier-plugin-twig-melody"]
+    ]
 }
