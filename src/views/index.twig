@@ -5,15 +5,17 @@
 {% endblock %}
 
 {% block content %}
-    {% for i in 0..3 %}
-        <article>
-            <h2 class="titulo">Lorem ipsum dolor sit</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea,
-                asperiores modi! Atque, sequi quas odio dolor cum illum facere
-                quaerat et quidem est, culpa corporis dolorem! Unde distinctio
-                explicabo est?
-            </p>
-        </article>
-    {% endfor %}
+    <div class="container">
+        {% for i in 0..3 %}
+            <article>
+                <h2 class="titulo">Lorem ipsum dolor sit</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ea, asperiores modi! Atque, sequi quas odio dolor cum illum
+                    facere quaerat et quidem est, culpa corporis dolorem! Unde
+                    distinctio explicabo est?
+                </p>
+            </article>
+        {% endfor %}
+    </div>
 {% endblock %}

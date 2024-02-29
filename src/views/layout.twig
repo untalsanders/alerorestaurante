@@ -7,52 +7,26 @@
             {% endblock %}
         </title>
         <meta charset="utf-8" />
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#ffffff" />
         <meta name="viewport"
             content="width=device-width user-scalable=no initial-scale=1" />
         <link rel="icon" href="/static/favicon.svg" />
-        <link rel="stylesheet" href="/static/css/styles.css" />
+        <link rel="stylesheet" href="/static/assets/css/styles.css" />
         {% block css %}{% endblock %}
+        <script src="https://kit.fontawesome.com/288f01bd1e.js"
+            crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div class="contenedor">
-            <header>
-                <div class="logo">
-                    <img src="/static/img/logo.svg" alt="Logotipo" />
-                    <a href="/">Sanders Gutiérrez</a>
-                </div>
-                <nav>
-                    <a href="/">Inicio</a>
-                    <a href="/about">Acerca de</a>
-                    <a href="/products">Productos</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/contact">Contacto</a>
-                </nav>
-            </header>
+        <div class="site">
+            {% include '_partials/header.twig' %}
 
-            <section class="principal">
-                {% block content %}{% endblock %}
-            </section>
+            <main class="main">{% block content %}{% endblock %}</main>
 
-            {% block sidebar %}{% endblock %}
-
-            <footer>
-                <section class="links">
-                    <a href="/">Inicio</a>
-                    <a href="/about">Acerca de</a>
-                    <a href="/products">Productos</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/contact">Contacto</a>
-                </section>
-                <div class="social">
-                    <a href="/">IN</a>
-                    <a href="/">TW</a>
-                    <a href="/">GH</a>
-                </div>
-            </footer>
+            {% include '_partials/footer.twig' %}
         </div>
     </body>
-    
-    <script src="/static/js/index.js"></script>
+
+    <script src="/static/assets/js/index.js"></script>
+    {% block js %}{% endblock %}
 </html>

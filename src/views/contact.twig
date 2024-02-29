@@ -5,16 +5,56 @@
 {% endblock %}
 
 {% block content %}
-    <article>
-        <h2 class="titulo">Contacto</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </article>
+    <div class="contact">
+        <div class="contact-hero">
+            <div class="container"><h2 class="titulo">Contacto</h2></div>
+        </div>
+        <div class="container">
+            <div class="contact-form">
+                <header>
+                    <h4>¿Tenés alguna consulta o comentario?</h4>
+                    <p>
+                        Sus comentarios son muy valiosos para nosotros, ya sea
+                        para mejorar o para continuar brindándole un servicio
+                        acorde al que nuestros clientes se merecen.
+                    </p>
+                </header>
+
+                <form method="POST"
+                    data-validation="contact"
+                    data-exito="Mensaje enviado con éxito. A la brevedad nos contactaremos."
+                    data-error="Ha ocurrido un error. Intente nuevamente más tarde."
+                    data-subject="Consulta desde contacto">
+                    <input data-name="Nombre y Apellido"
+                        data-rule-required="true"
+                        data-rule-nombre-y-apellido="true"
+                        data-msg-required="Este campo es requerido."
+                        name="nombre-y-apellido"
+                        type="text"
+                        placeholder="Nombre y Apellido" />
+
+                    <input data-name="Mail"
+                        data-rule-required="true"
+                        data-rule-mail="true"
+                        data-msg-required="Este campo es requerido."
+                        name="mail"
+                        type="email"
+                        placeholder="Mail" />
+
+                    <textarea data-name="Comentario"
+                        data-rule-required="true"
+                        data-rule-comentario="true"
+                        data-msg-required="Este campo es requerido."
+                        name="mensaje"
+                        placeholder="Escribe aquí tu mensaje"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="/static/assets/css/contact.css" />
 {% endblock %}
