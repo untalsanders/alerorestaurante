@@ -31,6 +31,10 @@ a:visited {
     }
 }
 
+input, button {
+    cursor: pointer;
+}
+
 .site {
     display: grid;
     grid-template-rows: min-content auto min-content;
@@ -194,7 +198,7 @@ aside .widget {
             }
 
             .social {
-                color: #999;
+                flex-wrap: wrap;
             }
         }
     }
