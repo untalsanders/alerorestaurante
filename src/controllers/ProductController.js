@@ -1,6 +1,6 @@
 'use strict'
 
-const shirts = [
+const products = [
     {
         "id": 1,
         "title": "Narana",
@@ -29,13 +29,13 @@ const shirts = [
 
 const getProducts = (req, res) => {
     res.render('products.twig', {
-        shirts
+        products
     })
 }
 
 const getProduct = (req, res) => {
-    const { shirtId } = req.params
-    shirts.filter((shirt) => (shirtId == shirt.id ? res.render('shirt-detail.twig', { shirt }) : null))
+    const { id } = req.params
+    products.filter(product => (id == product.id ? res.render('product-details.twig', { product }) : null))
 }
 
 module.exports = {

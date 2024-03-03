@@ -2,16 +2,16 @@
 
 {% block title %}
 	Camiseta
-	{{ shirt.title }}
+	{{ product.title }}
 {% endblock %}
 
 {% block content %}
 	<div class="container">
 		<article class="article">
 			<h2 class="titulo">Camiseta
-				{{ shirt.title }}</h2>
-			<img src="/static/img/{{ shirt.image }}" alt="" width="250"/>
-			<p>{{ shirt.description }}</p>
+				{{ product.title }}</h2>
+			<img src="/static/img/{{ product.image }}" alt="" width="250"/>
+			<p>{{ product.description }}</p>
 			<a href="/products">Regresar</a>
 		</article>
 	</div>

@@ -12,7 +12,7 @@ const router = Router()
 router.get('/', indexPage)
 router.get('/about', aboutPage)
 router.get('/products', getProducts)
-router.get('/products/:shirtId', getProduct)
+router.get('/products/:id', getProduct)
 router.get('/blog', blogPage)
 router.get('/contact', contactPage)
 
