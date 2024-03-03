@@ -3,7 +3,7 @@
 const { join } = require('path')
 const express = require('express')
 const config = require('./config')
-const { shirts } = require('./data')
+const { router } = require('./routes')
 
 const app = express()
 
@@ -14,31 +14,7 @@ app.set('twig options', {
     strict_variables: false,
 })
 
-app.get('/', (req, res) => {
-    res.render('index.twig')
-})
-
-app.get('/about', (req, res) => {
-    res.render('about.twig')
-})
-
-app.get('/products', (req, res) => {
-    res.render('products.twig', {
-        shirts,
-    })
-})
-
-app.get('/products/:shirtId', (req, res) => {
-    const { shirtId } = req.params
-    shirts.filter((shirt) => (shirtId == shirt.id ? res.render('shirt-detail.twig', { shirt }) : null))
-})
-
-app.get('/blog', (req, res) => {
-    res.render('blog.twig')
-})
-
-app.get('/contact', (req, res) => res.render('contact.twig'))
-
+app.use('/', router)
 app.use((req, res) => {
     res.status(404)
     res.render('404.twig', {
