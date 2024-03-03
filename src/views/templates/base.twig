@@ -2,9 +2,7 @@
 <html lang="es">
     <head>
         <title>
-            {% block title %}
-                | T-Shirt Shop
-            {% endblock %}
+            {% block title %}{% endblock %} | T-Shirt Shop
         </title>
         <meta charset="utf-8" />
         <meta name="theme-color" content="#ffffff" />
@@ -12,17 +10,16 @@
         <link rel="icon" href="/static/favicon.svg" />
         <link rel="stylesheet" href="/static/assets/css/styles.css" />
         {% block css %}{% endblock %}
-        <script src="https://kit.fontawesome.com/288f01bd1e.js"
-            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/288f01bd1e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="site">
-            {% include '_partials/header.twig' %}
+            {% include './_partials/header.twig' %}
 
             <main class="main">{% block content %}{% endblock %}</main>
 
-            {% include '_partials/footer.twig' %}
+            {% include './_partials/footer.twig' %}
         </div>
     </body>
 

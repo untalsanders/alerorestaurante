@@ -4,7 +4,7 @@
     "description": "RESTAPI - Tienda de camisetas estampadas",
     "private": true,
     "author": "Sanders Gutierrez <ing.sanders@gmail.com>",
-    "license": "MIT",
+    "license": "BSD-2-Clause",
     "homepage": "https://github.com/untalsanders/shirt-store#README",
     "repository": {
         "type": "git",

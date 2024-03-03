@@ -2,7 +2,7 @@
 
 const { join } = require('path')
 const express = require('express')
-const config = require('./config')
+const config = require('./config/app')
 const { router } = require('./routes')
 
 const app = express()
@@ -17,7 +17,7 @@ app.set('twig options', {
 app.use('/', router)
 app.use((req, res) => {
     res.status(404)
-    res.render('404.twig', {
+    res.render('error/404.twig', {
         message: '404 - Página no encontrada :(',
     })
 })
