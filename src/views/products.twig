@@ -9,10 +9,13 @@
         <h2>Lista de Productos</h2>
         {% for product in products %}
             <article class="article">
-                <h2>Camiseta {{ product.title }}</h2>
+                <h2>
+                    Camiseta
+                    {{ product.title }}
+                </h2>
                 <img src="/static/assets/img/{{ product.image }}" width="250" />
                 <p>{{ product.description }}</p>
-                <a href="/products/{{ product.id }}">Ver</a>
+                <a href="/products/{{ product.id }}">Ver producto</a>
             </article>
         {% endfor %}
     </div>

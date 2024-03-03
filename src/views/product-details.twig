@@ -1,18 +1,23 @@
 {% extends 'templates/base.twig' %}
 
 {% block title %}
-	Camiseta
-	{{ product.title }}
+    Camiseta
+    {{ product.title }}
 {% endblock %}
 
 {% block content %}
-	<div class="container">
-		<article class="article">
-			<h2 class="titulo">Camiseta
-				{{ product.title }}</h2>
-			<img src="/static/img/{{ product.image }}" alt="" width="250"/>
-			<p>{{ product.description }}</p>
-			<a href="/products">Regresar</a>
-		</article>
-	</div>
+    <div class="container">
+        <article class="article">
+            <h2 class="titulo">
+                Camiseta
+                {{ product.title }}
+            </h2>
+            <img src="/static/img/{{ product.image }}" alt="" width="250" />
+            <p>{{ product.description }}</p>
+            <a href="/products">
+                <i class="fa-solid fa-arrow-left"></i>
+                Regresar
+            </a>
+        </article>
+    </div>
 {% endblock %}
