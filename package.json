@@ -16,7 +16,9 @@
     "scripts": {
         "start": "node src/index.js",
         "dev": "NODE_ENV=development nodemon src/index.js",
-        "format": "prettier . \"**/*.{css,js,twig}\" --write"
+        "format": "prettier . \"**/*.{css,js,twig}\" --write",
+        "lint": "eslint --fix . --ext .js",
+        "prepare": "husky"
     },
     "dependencies": {
         "express": "4.18.2",
@@ -24,7 +26,12 @@
     },
     "devDependencies": {
         "@afshinhaghighat/prettier-plugin-twig-melody": "2.0.2",
+        "@commitlint/cli": "19.0.3",
+        "@commitlint/config-conventional": "19.0.3",
         "dotenv": "16.4.5",
+        "eslint": "8.57.0",
+        "husky": "9.0.11",
+        "lint-staged": "15.2.2",
         "nodemon": "3.1.0",
         "prettier": "3.2.5"
     }
