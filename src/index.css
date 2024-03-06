@@ -38,7 +38,7 @@ a:hover {
 
 #root {
     display: grid;
-    grid-template-rows: min-content auto min-content;
+    grid-template-rows: min-content 1fr min-content;
     min-height: 100vh;
 }
 
@@ -46,4 +46,10 @@ a:hover {
     max-width: clamp(80vw, 80vw, 95vw);
     margin-left: auto;
     margin-right: auto;
+}
+
+.doubleColor {
+    > span {
+        color: rgb(255, 128, 0);
+    }
 }
