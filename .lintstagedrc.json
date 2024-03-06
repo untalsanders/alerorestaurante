@@ -1,4 +1,4 @@
 {
-    "*.js": ["npm run format", "npm run lint"],
+    "*.jsx": ["npm run format", "npm run lint"],
     "*.json": "prettier --write *.json"
 }
