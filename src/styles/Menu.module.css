@@ -1,12 +1,13 @@
 .Menu {
     display: none;
 
-    @media only screen and (min-width: 48rem) {
-        & {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            padding: 0 1rem;
-        }
+    @media screen and (min-width: 48rem) {
+        display: flex;
+        align-items: center;
+    }
+
+    > * {
+        padding: 1rem;
+        transition: color 200ms ease-in;
     }
 }

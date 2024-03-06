@@ -3,6 +3,7 @@
 import styles from '@styles/Header.module.css'
 import Logo from './Logo'
 import Menu from './Menu'
+import BurgerButton from './BurgerButton'
 
 export default function Header() {
     return (
@@ -10,6 +11,7 @@ export default function Header() {
             <div className="container">
                 <Logo />
                 <Menu />
+                <BurgerButton />
             </div>
         </header>
     )

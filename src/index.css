@@ -4,7 +4,6 @@
     font-family: Poppins, Inter, system-ui, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-
     text-rendering: optimizeLegibility;
 }
 
@@ -16,6 +15,8 @@
 
 html {
     box-sizing: inherit;
+    font-size: 100%;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -42,7 +43,7 @@ a:hover {
 }
 
 .container {
-    max-width: clamp(80rem, 80vw, 95vw);
+    max-width: clamp(80vw, 80vw, 95vw);
     margin-left: auto;
     margin-right: auto;
 }
