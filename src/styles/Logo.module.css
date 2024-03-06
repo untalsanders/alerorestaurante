@@ -1,4 +1,4 @@
-.Logo {
+.Logo a {
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -33,7 +33,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    a .logoImgage {
+    .logoImgage {
         animation: logo-spin infinite 20s linear;
     }
 }
