@@ -9,7 +9,7 @@ export default function Menu() {
             <a href="#">About</a>
             <a href="#">Menu</a>
             <a href="#">Locations</a>
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
         </nav>
     )
 }

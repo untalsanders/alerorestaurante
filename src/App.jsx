@@ -1,14 +1,14 @@
 'use strict'
 
 import './App.css'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Header from '@components/shared/Header'
+import Footer from '@components/shared/Footer'
+import SubFooter from '@components/shared/SubFooter'
 
 export default function App() {
     return (
         <>
             <Header />
-
             <main>
                 <div className="container">
                     <p>
@@ -53,7 +53,7 @@ export default function App() {
                     </p>
                 </div>
             </main>
-
+            <SubFooter />
             <Footer />
         </>
     )
