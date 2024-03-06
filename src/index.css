@@ -3,13 +3,12 @@
     line-height: 1.5;
     font-weight: 400;
 
-    font-synthesis: none;
     text-rendering: optimizeLegibility;
 }
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: #d4d6f5;
     text-decoration: inherit;
 }
 
@@ -19,6 +18,12 @@ a:hover {
 
 body {
     margin: 0;
+    min-height: 100vh;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
     min-height: 100vh;
 }
 

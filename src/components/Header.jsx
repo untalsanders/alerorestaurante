@@ -6,7 +6,7 @@ import Menu from './Menu'
 
 export default function Header() {
     return (
-        <header className={styles.header}>
+        <header className={styles.Header}>
             <div className="container">
                 <div className={styles.Logo}>
                     <Logo />
