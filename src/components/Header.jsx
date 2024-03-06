@@ -8,9 +8,7 @@ export default function Header() {
     return (
         <header className={styles.Header}>
             <div className="container">
-                <div className={styles.Logo}>
-                    <Logo />
-                </div>
+                <Logo />
                 <Menu />
             </div>
         </header>
