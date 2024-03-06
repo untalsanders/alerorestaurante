@@ -2,10 +2,11 @@
     background-color: #1e1e1e;
     color: white;
     padding: 0.8rem 1rem;
-}
 
-.Header > * {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    > * {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
 }
