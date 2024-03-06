@@ -19,7 +19,10 @@ a:hover {
 
 body {
     margin: 0;
-    display: grid;
-    place-items: center;
     min-height: 100vh;
+}
+
+.container {
+    max-width: clamp(83.5rem, 80vw, 95vw);
+    margin: 0 auto;
 }
