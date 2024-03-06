@@ -1,0 +1,39 @@
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logoImgage {
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logoImgage:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logoText {
+    font-size: 1.5rem;
+    font-weight: 900;
+
+    > span {
+        color: rgb(255, 128, 0);
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a .logoImgage {
+        animation: logo-spin infinite 20s linear;
+    }
+}

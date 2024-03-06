@@ -18,7 +18,8 @@
     "devDependencies": {
         "@commitlint/cli": "19.0.3",
         "@commitlint/config-conventional": "19.0.3",
-        "@vitejs/plugin-react": "4.2.1",
+        "@rollup/plugin-alias": "5.1.0",
+        "@vitejs/plugin-react-swc": "3.6.0",
         "eslint": "8.57.0",
         "eslint-plugin-react": "7.34.0",
         "eslint-plugin-react-hooks": "4.6.0",
