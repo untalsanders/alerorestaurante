@@ -25,11 +25,10 @@ jobs:
         run: npm ci
       - name: Build App
         run: npm run build
-        env:
-          BASE_URL: ${{ env.BASE_URL }}
+        # env:
+        #   BASE_URL: ${{ env.BASE_URL }}
       - name: Deploy to GitHub Pages
         run: |
-          echo "BASE_URL: ${{ env.BASE_URL }}"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npm run deploy -- -u "Sanders Gutiérrez <ing.sanders@gmail.com>"
         env:
