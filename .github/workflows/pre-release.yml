@@ -5,9 +5,6 @@ on:
   push:
     branches: [develop]
 
-env:
-  BASE_URL: ${{ vars.BASE_URL }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,8 +22,6 @@ jobs:
         run: npm ci
       - name: Build App
         run: npm run build
-        # env:
-        #   BASE_URL: ${{ env.BASE_URL }}
       - name: Deploy to GitHub Pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
