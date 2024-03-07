@@ -25,6 +25,7 @@ jobs:
           BASE_URL: ${{ vars.BASE_URL }}
       - name: Deploy to GitHub Pages
         run: |
+          echo "BASE_URL: ${{ vars.BASE_URL }}"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npm run deploy -- -u "Sanders Gutiérrez <ing.sanders@gmail.com>"
         env:
