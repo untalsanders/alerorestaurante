@@ -1,0 +1,12 @@
+.SocialLinks {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    > * {
+        color: #999;
+    }
+}

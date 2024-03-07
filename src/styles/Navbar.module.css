@@ -1,7 +1,7 @@
 .Menu {
     display: none;
 
-    @media screen and (min-width: 48rem) {
+    @media screen and (min-width: 53.375rem) {
         display: flex;
         align-items: center;
     }
