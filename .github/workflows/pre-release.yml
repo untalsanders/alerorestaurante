@@ -28,13 +28,9 @@ jobs:
         run: npm install
       - name: Build App
         run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Update artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload dist repository
-          path: './dist'
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "Sanders Gutiérrez <ing.sanders@gmail.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
