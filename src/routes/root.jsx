@@ -4,9 +4,11 @@ import App from '@/App'
 import { AboutPage, ContactPage, ErrorPage, HomePage, LocationsPage, MenusPage } from '@pages'
 import { createBrowserRouter } from 'react-router-dom'
 
+const { VITE_APP_URL } = import.meta.env
+
 export const router = createBrowserRouter([
     {
-        path: __BASE_URL__,
+        path: VITE_APP_URL,
         element: <App />,
         errorElement: <ErrorPage />,
         children: [

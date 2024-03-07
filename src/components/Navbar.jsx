@@ -3,14 +3,16 @@
 import styles from '@styles/Navbar.module.css'
 import { Link } from 'react-router-dom'
 
+const { VITE_APP_URL } = import.meta.env
+
 export default function Navbar() {
     return (
         <nav className={styles.Menu}>
-            <Link to={__BASE_URL__}>Home</Link>
-            <Link to={`${__BASE_URL__}/about`}>About</Link>
-            <Link to={`${__BASE_URL__}/menus`}>Menus</Link>
-            <Link to={`${__BASE_URL__}/locations`}>Locations</Link>
-            <Link to={`${__BASE_URL__}/contact`}>Contact</Link>
+            <Link to={VITE_APP_URL}>Home</Link>
+            <Link to={`${VITE_APP_URL}/about`}>About</Link>
+            <Link to={`${VITE_APP_URL}/menus`}>Menus</Link>
+            <Link to={`${VITE_APP_URL}/locations`}>Locations</Link>
+            <Link to={`${VITE_APP_URL}/contact`}>Contact</Link>
         </nav>
     )
 }
