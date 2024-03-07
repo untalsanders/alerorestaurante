@@ -1,0 +1,6 @@
+export { AboutPage } from './about-page'
+export { ContactPage } from './contact-page'
+export { ErrorPage } from './error-page'
+export { HomePage } from './home-page'
+export { LocationsPage } from './locations-page'
+export { MenusPage } from './menus-page'

@@ -1,9 +1,0 @@
-{
-    "verbose": true,
-    "ignore": ["node_modules"],
-    "env": {
-        "NODE_ENV": "development"
-    },
-    "watch": ["public", "src"],
-    "ext": "css,js,json,twig"
-}

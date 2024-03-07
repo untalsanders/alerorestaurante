@@ -1,0 +1,13 @@
+.Menu {
+    display: none;
+
+    @media screen and (min-width: 53.375rem) {
+        display: flex;
+        align-items: center;
+    }
+
+    > * {
+        padding: 1rem;
+        transition: color 200ms ease-in;
+    }
+}

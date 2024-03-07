@@ -1,0 +1,18 @@
+.SubFooter {
+    background-color: #e3efff;
+    color: #555;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    > * {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        @media screen and (min-width: 53.375rem) {
+            justify-content: space-between;
+        }
+    }
+}
