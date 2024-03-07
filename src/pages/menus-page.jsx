@@ -3,7 +3,7 @@
 export function MenusPage() {
     return (
         <div className="container">
-            <h1>Menus Page</h1>
+            <h1>Menus Page - Menu List</h1>
         </div>
     )
 }

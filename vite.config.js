@@ -5,7 +5,7 @@ import { defineConfig, loadEnv } from 'vite'
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, process.cwd(), '')
     return {
-        base: '/alerorestaurant/',
+        base: JSON.stringify(env.BASE_URL),
         define: {
             __BASE_URL__: JSON.stringify(env.BASE_URL),
         },
