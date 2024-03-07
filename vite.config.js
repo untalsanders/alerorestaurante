@@ -2,10 +2,10 @@ import react from '@vitejs/plugin-react-swc'
 import { fileURLToPath } from 'node:url'
 import { defineConfig, loadEnv } from 'vite'
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ command, mode }) => {
     const env = loadEnv(mode, process.cwd(), '')
     return {
-        base: '/',
+        base: (command === 'build') ? JSON.stringify(env.BASE_URL) : '/',
         define: {
             __BASE_URL__: JSON.stringify(env.BASE_URL),
         },
