@@ -6,7 +6,7 @@ on:
     branches: [develop]
 
 env:
-  BASE_URL: ${{ vars.BASE_URL }}
+  BASE_URL: '/alerorestaurant'
 
 jobs:
   deploy:
