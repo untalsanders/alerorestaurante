@@ -1,6 +1,6 @@
 'use strict'
 
-export default function ContactPage() {
+export function ContactPage() {
     return (
         <div className="contact">
             <div className="contact-hero">

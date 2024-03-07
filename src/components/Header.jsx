@@ -2,7 +2,7 @@
 
 import styles from '@styles/Header.module.css'
 import Logo from './Logo'
-import Menu from './Menu'
+import Menu from './Navbar'
 import BurgerButton from './BurgerButton'
 
 export default function Header() {
