@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
     root: './src',
+    base: '/alerorestaurant/',
     plugins: [react()],
     resolve: {
         alias: [
