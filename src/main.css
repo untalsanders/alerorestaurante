@@ -47,9 +47,3 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-
-.doubleColor {
-    > span {
-        color: rgb(255, 128, 0);
-    }
-}
