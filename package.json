@@ -7,6 +7,7 @@
         "dev": "vite",
         "build": "vite build",
         "deploy": "gh-pages -d dist",
+        "predeploy": "npm run build",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "format": "prettier . \"**/*.{css,js,twig}\" --write",
         "preview": "vite preview --port 8080",
