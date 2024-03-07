@@ -1,9 +1,9 @@
 'use strict'
 
-export function LandingPage() {
+export function HomePage() {
     return (
         <div className="container">
-            <h1>Landing Page</h1>
+            <h1>Home Page</h1>
         </div>
     )
 }

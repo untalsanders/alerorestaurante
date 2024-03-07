@@ -1,18 +1,18 @@
 'use strict'
 
 import App from '@/App'
-import { AboutPage, ContactPage, ErrorPage, LandingPage, LocationsPage, MenusPage } from '@pages'
+import { AboutPage, ContactPage, ErrorPage, HomePage, LocationsPage, MenusPage } from '@pages'
 import { createBrowserRouter } from 'react-router-dom'
 
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: __BASE_URL__,
         element: <App />,
         errorElement: <ErrorPage />,
         children: [
             {
                 index: true,
-                element: <LandingPage />,
+                element: <HomePage />,
             },
             {
                 path: 'about',

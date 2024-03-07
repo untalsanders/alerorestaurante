@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 export default function NavbarSubFooter() {
     return (
         <section className={styles.NavbarSubFooter}>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/menus">Menus</Link>
-            <Link to="/locations">Locations</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to={`${__BASE_URL__}/`}>Home</Link>
+            <Link to={`${__BASE_URL__}/about`}>About</Link>
+            <Link to={`${__BASE_URL__}/menus`}>Menus</Link>
+            <Link to={`${__BASE_URL__}/locations`}>Locations</Link>
+            <Link to={`${__BASE_URL__}/contact`}>Contact</Link>
         </section>
     )
 }
