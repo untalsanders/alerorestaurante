@@ -12,7 +12,8 @@
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "format": "prettier . \"**/*.{css,js,twig}\" --write",
         "preview": "vite preview --port 8080",
-        "prepare": "husky"
+        "prepare": "husky",
+        "wp-env:start": "wp-env start"
     },
     "dependencies": {
         "react": "18.2.0",
@@ -25,6 +26,7 @@
         "@commitlint/config-conventional": "19.0.3",
         "@rollup/plugin-alias": "5.1.0",
         "@vitejs/plugin-react-swc": "3.6.0",
+        "@wordpress/env": "9.5.0",
         "eslint": "8.57.0",
         "eslint-plugin-react": "7.34.0",
         "eslint-plugin-react-hooks": "4.6.0",
