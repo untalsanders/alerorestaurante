@@ -16,6 +16,9 @@ npm install
 # production
 npm start
 
+# Copiar .env.production a .env y modificar la variable VITE_APP_URL
+cp .env.production .env
+
 # development
 npm run dev
 ```
