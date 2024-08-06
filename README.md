@@ -1,8 +1,8 @@
 [![Continuous Delivery](https://github.com/untalsanders/shirt-store/actions/workflows/cd.yml/badge.svg)](https://github.com/untalsanders/shirt-store/actions/workflows/cd.yml)
 
-# Tienda
+# Alero Restaurante
 
-Tienda de camisetas estampadas
+Hace más de 25 años, abrimos nuestras puertas, Enclavados en el corazón de Washington DC, Donde los sabores de México bailan en tu lengua, Y la noche cobra vida con ritmo y alegría. 
 
 ## Instalar dependencias
 
