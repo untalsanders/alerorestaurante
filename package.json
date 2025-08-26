@@ -18,13 +18,13 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-router-dom": "6.22.2",
-        "serve": "14.2.1"
+        "serve": "14.2.4"
     },
     "devDependencies": {
         "@commitlint/cli": "19.0.3",
         "@commitlint/config-conventional": "19.0.3",
         "@rollup/plugin-alias": "5.1.0",
-        "@vitejs/plugin-react-swc": "3.6.0",
+        "@vitejs/plugin-react-swc": "3.11.0",
         "eslint": "8.57.0",
         "eslint-plugin-react": "7.34.0",
         "eslint-plugin-react-hooks": "4.6.0",
@@ -33,6 +33,6 @@
         "husky": "9.0.11",
         "lint-staged": "15.2.10",
         "prettier": "3.2.5",
-        "vite": "5.4.3"
+        "vite": "7.1.3"
     }
 }
